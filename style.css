@@ -1,0 +1,28 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.foter {
+    background-color: cornflowerblue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.mezzo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatti p {
+    display: flex;
+    align-items: center;
+}
+
+.passioni {
+    height: 80%;
+    background-color: lightskyblue;
+}
