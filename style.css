@@ -22,11 +22,6 @@
     align-items: center;
 }
 
-.passioni {
-    height: 80%;
-    background-color: lightskyblue;
-}
-
 .foglio {
 padding: 3%;
 margin-top: 4%;
@@ -38,4 +33,17 @@ border: 1px solid black;
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+.card-img-top{
+    width: 286px;;
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.titolo {
+    border: 1px solid  black;
+    width: 50%;
 }
