@@ -3,7 +3,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    min-height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/1 inf.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 2px 2px 8px #000, 0 0 10px #000;
 }
 
 .foter {
@@ -33,6 +45,10 @@ border: 1px solid black;
     position: sticky;
     top: 0;
     z-index: 999;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0rem 2rem;
 }
 
 .card-img-top{
@@ -46,4 +62,125 @@ border: 1px solid black;
 .titolo {
     border: 1px solid  black;
     width: 50%;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+    
+h1, h2 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+p, li {
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.stage .row {
+    margin-bottom: 8rem !important;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.stage img {
+    transition: transform 0.3s ease;
+}
+
+.stage img:hover {
+    transform: scale(1.02);
+}
+
+/* Footer Styles */
+footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+footer h5 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+footer .contact-info li {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+footer .contact-info li:hover {
+    color: #0d6efd;
+}
+
+footer a {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/* Smooth Scroll Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.navbar-brand svg {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover svg {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Add padding to body to prevent content from hiding under fixed navbar */
+body {
+    padding-top: 24px;
 }
